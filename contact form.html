@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<style>
+  
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+ input[type=submit] {
+  width: 100%;
+  background-color: #22031f;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ input[type=submit]:hover {
+  background-color: #45a049;
+}
+ div {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+  Function
+validate form
+  if (name==null || name==""){  
+  alert("Name must be 4 characters long");  
+  return false;  
+}else if(message.length>20){  
+  alert("message must be at least 20 characters long.");  
+  return false; 
+  
+</style>
+<body>
+ <h3>CONTACT ME</h3>
+ <div>
+  <form action="/action_page.php">
+    <label for="fname">Full Name </label>
+    <input type="text" id="fname" name="Full name" required
+           placeholder="Your name..">
+     <label for="title">Title</label>
+    <select id="mr" name="mr">
+      <option value="Mr">Mr</option>
+     <option value="mrs">Mrs</option>
+      <option value="miss">Miss</option>
+ placeholder="Title">   
+      
+     <label for="E-mail"> E-mail</label>
+    <input type="text" id="e-mail" name="e-mail" required
+           
+ placeholder="E-mail">
+    
+      <label for="message"> Leave A Message</label>
+    <input type="text" id="leave a message" name="Leave a Message" required       
+   placeholder="Leave A Message"> 
+   </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+ 
+</body>
+</html>
